@@ -18,9 +18,9 @@ Scan `lab/tasks/` and/or `wiki/` files for recurring structural, formatting, or 
 2. List all `.md` files in the scope directories (recursively for `lab/tasks/`).
 
 3. Read all convention files that apply to the scope:
-   - Always read `contributing/conventions/common.md`
-   - If scope includes `lab/tasks/`: read `contributing/conventions/tasks.md`
-   - If scope includes `wiki/`: read `contributing/conventions/wiki.md`
+   - Always read [`contributing/conventions/common.md`](../../../contributing/conventions/common.md)
+   - If scope includes `lab/tasks/`: read [`contributing/conventions/tasks.md`](../../../contributing/conventions/tasks.md)
+   - If scope includes `wiki/`: read [`contributing/conventions/wiki.md`](../../../contributing/conventions/wiki.md)
 
 4. Read every `.md` file in the scope. For each file, note recurring elements:
    - **Structural patterns** — how sections, headings, or sub-sections are organised

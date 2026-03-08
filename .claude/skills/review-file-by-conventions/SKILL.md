@@ -12,12 +12,12 @@ Review a single file for problems — first conceptual and pedagogical issues, t
 2. Read the target file.
 3. Read the convention files that apply to the target file:
    - **For `lab/tasks/` files:**
-     - `contributing/conventions/tasks.md` — Section 13 defines the ten review dimensions (D1–D10) for conceptual review; Section 3 and Section 12 define task structure and design principles for convention review
-     - `contributing/conventions/common.md` — writing conventions (4.1–4.23)
+     - [`contributing/conventions/tasks.md`](../../../contributing/conventions/tasks.md) — Section 13 defines the ten review dimensions (D1–D10) for conceptual review; Section 3 and Section 12 define task structure and design principles for convention review
+     - [`contributing/conventions/common.md`](../../../contributing/conventions/common.md) — writing conventions (4.1–4.23)
    - **For `wiki/` files:**
-     - `contributing/conventions/common.md` — writing conventions (4.1–4.23)
-     - `contributing/conventions/wiki.md` — wiki file structure and section patterns
-4. **Conceptual review** (only for `lab/tasks/` files): Analyse the file against each dimension (D1–D10) from Section 13 of `tasks.md`. For each problem found, record: the dimension, the line number(s) or section, a short description, severity (`[High]`, `[Medium]`, or `[Low]`), and a suggested fix.
+     - [`contributing/conventions/common.md`](../../../contributing/conventions/common.md) — writing conventions (4.1–4.23)
+     - [`contributing/conventions/wiki.md`](../../../contributing/conventions/wiki.md) — wiki file structure and section patterns
+4. **Conceptual review** (only for `lab/tasks/` files): Analyse the file against each dimension (D1–D10) from Section 13 of [`contributing/conventions/tasks.md`](../../../contributing/conventions/tasks.md). For each problem found, record: the dimension, the line number(s) or section, a short description, severity (`[High]`, `[Medium]`, or `[Low]`), and a suggested fix.
 5. **Convention review**: Go through the target file **line by line**. Check it against **every** convention in the applicable convention files. Flag each violation with its line number.
 6. Scan for `<!-- TODO ... -->` comments. Report each one with its line number and the comment text.
 7. Scan for empty sections: a heading immediately followed by another heading, a `<!-- TODO ... -->` comment, or end of file, with no real content lines in between. Report each empty section with its line number and heading text.

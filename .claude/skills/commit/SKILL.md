@@ -9,7 +9,7 @@ Create a git commit following this project's commit conventions.
 
 ## Conventions
 
-Read `contributing/conventions/commits.md` for the full reference
+Read [`contributing/conventions/commits.md`](../../../contributing/conventions/commits.md) for the full reference
 (types, scopes, subject line, body rules, examples).
 
 ## AI co-authorship

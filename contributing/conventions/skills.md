@@ -93,7 +93,7 @@ GPT, Gemini). Write so that any capable agent can execute the skill.
 - Use a numbered list; each item is one clear, imperative action
 - Reference files by their exact path from the repository root
 - When referencing a convention file, use a markdown link rather than a
-  bare path. Good: `[Read the conventions.](contributing/conventions/common.md)`.
+  bare path. Good: `[Read the conventions.](../../../contributing/conventions/common.md)`.
   Bad: `Read contributing/conventions/common.md.`
 - Validate `$ARGUMENTS` in the **first step**; if input is invalid or
   missing, tell the user and stop
