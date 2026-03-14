@@ -34,7 +34,8 @@ from pathlib import Path
 
 def _load_env():
     """Load variables from .env file (simple key=value parser)."""
-    for env_file in [".env", ".env.docker.secret"]:
+    # Load .env.agent.secret first so its values take precedence
+    for env_file in [".env.agent.secret", ".env", ".env.docker.secret"]:
         path = Path(env_file)
         if not path.exists():
             continue
@@ -47,7 +48,7 @@ def _load_env():
             key, _, value = line.partition("=")
             key = key.strip()
             value = value.strip().strip('"').strip("'")
-            if key and key not in os.environ:
+            if key:
                 os.environ[key] = value
 
 
@@ -101,6 +102,7 @@ def _run_agent(question: str, timeout: int = 60):
             capture_output=True,
             text=True,
             timeout=timeout,
+            env=os.environ,  # Pass environment variables to subprocess
         )
     except subprocess.TimeoutExpired:
         return None, "Agent timed out (60s)"
